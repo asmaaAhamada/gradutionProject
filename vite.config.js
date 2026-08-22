@@ -17,6 +17,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.ico', 'apple-touch-icon.png', 'masked-icon.svg'],
+      workbox: {
+        maximumFileSizeToCacheInBytes: 5 * 1024 * 1024, // رفع الحد المسموح إلى 5 ميجابايت
+      },
       manifest: {
         name: 'مؤسسة عمرها',
         short_name: 'عمرها',
