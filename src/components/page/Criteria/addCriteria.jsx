@@ -15,8 +15,7 @@ import CloseIcon from "@mui/icons-material/Close";
 import { useTheme } from "@mui/material/styles";
 import { white } from "../../../style/color-main/color";
 import { useDispatch, useSelector } from "react-redux";
-import { setformInfo, Add_Criteria, resetForm } from "../../../backend/slice/Criteria/Add"; 
-
+import {setformInfo ,resetForm, Add_Criteria ,} from '../../../backend/slice/Criteria/add'
 // دالة الحركة الانزلاقية من الأعلى للأسفل
 function TransitionDown(props) {
   return <Slide {...props} direction="down" />;
